@@ -1,0 +1,91 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2.1 (win64) Build 5266912 Sun Dec 15 09:03:24 MST 2024
+| Date         : Mon Jun 16 13:27:09 2025
+| Host         : funda19 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file Top_control_sets_placed.rpt
+| Design       : Top
+| Device       : xc7a35ti
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    13 |
+|    Minimum number of control sets                        |    13 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    48 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    13 |
+| >= 0 to < 4        |     2 |
+| >= 4 to < 6        |     0 |
+| >= 6 to < 8        |     0 |
+| >= 8 to < 10       |     0 |
+| >= 10 to < 12      |     5 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     0 |
+| >= 16              |     6 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              44 |           15 |
+| No           | No                    | Yes                    |              80 |           19 |
+| No           | Yes                   | No                     |              32 |            9 |
+| Yes          | No                    | No                     |              52 |           17 |
+| Yes          | No                    | Yes                    |              32 |            8 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++------------------------+---------------------------------------------+--------------------+------------------+----------------+--------------+
+|      Clock Signal      |                Enable Signal                |  Set/Reset Signal  | Slice Load Count | Bel Load Count | Bels / Slice |
++------------------------+---------------------------------------------+--------------------+------------------+----------------+--------------+
+|  ldrs_inst/ADCclk_OBUF | ldrs_inst/adc_inst/__0/i__n_0               |                    |                1 |              1 |         1.00 |
+|  ldrs_inst/ADCclk_OBUF | ldrs_inst/adc_inst/__2/i__n_0               |                    |                1 |              1 |         1.00 |
+|  ldrs_inst/ADCclk_OBUF | ldrs_inst/adc_inst/__3/i__n_0               |                    |                2 |             10 |         5.00 |
+|  clk_IBUF_BUFG         | ldrs_inst/adc_inst/dataN_2                  |                    |                3 |             10 |         3.33 |
+|  clk_IBUF_BUFG         | ldrs_inst/adc_inst/dataO_0                  |                    |                3 |             10 |         3.33 |
+|  clk_IBUF_BUFG         | ldrs_inst/adc_inst/dataE_3                  |                    |                4 |             10 |         2.50 |
+|  clk_IBUF_BUFG         | ldrs_inst/adc_inst/dataS_1                  |                    |                3 |             10 |         3.33 |
+|  ldrs_inst/ADCclk_OBUF |                                             |                    |                6 |             16 |         2.67 |
+|  clk_IBUF_BUFG         | motores_inst/motor1_controller/pulse_length | reset_IBUF         |                4 |             16 |         4.00 |
+|  clk_IBUF_BUFG         | motores_inst/motor_controller/pulse_length  | reset_IBUF         |                4 |             16 |         4.00 |
+|  clk_IBUF_BUFG         |                                             |                    |                9 |             28 |         3.11 |
+|  clk_IBUF_BUFG         |                                             | ldrs_inst/ADCclk_s |                9 |             32 |         3.56 |
+|  clk_IBUF_BUFG         |                                             | reset_IBUF         |               19 |             80 |         4.21 |
++------------------------+---------------------------------------------+--------------------+------------------+----------------+--------------+
+
+
