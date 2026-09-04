@@ -1,0 +1,12 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/user2/Proyecto Fin de Asignatura/Proyecto Fin de Asignatura.srcs/sources_1/new/ADC.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'ADC'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/user2/Proyecto Fin de Asignatura/Proyecto Fin de Asignatura.srcs/sources_1/new/ControlMotores.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'ControlMotores'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/user2/Proyecto Fin de Asignatura/Proyecto Fin de Asignatura.srcs/sources_1/new/Ldrs.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Ldrs'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/user2/Proyecto Fin de Asignatura/Proyecto Fin de Asignatura.srcs/sources_1/new/Motor.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Motor'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/user2/Proyecto Fin de Asignatura/Proyecto Fin de Asignatura.srcs/sources_1/new/Top.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Top'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/user2/Proyecto Fin de Asignatura/Proyecto Fin de Asignatura.srcs/sim_1/new/Tb_Top.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Top_tb'
